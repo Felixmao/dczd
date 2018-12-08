@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: com.dczd.growup
+
+  cloud:
+    config:
+      env: default
+      label: dczd
+      uri: http://dczd-configuration:8900

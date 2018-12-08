@@ -1,0 +1,4 @@
+com\dczd\study\config\RedisConfigurationFactory.class
+com\dczd\study\StudyApplication.class
+com\dczd\study\config\TransactionConfiguration.class
+com\dczd\study\config\SwaggerConfig.class

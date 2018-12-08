@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.dczd.common/com.dczd.common.iml" filepath="$PROJECT_DIR$/com.dczd.common/com.dczd.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.dczd.growup/com.dczd.growup.iml" filepath="$PROJECT_DIR$/com.dczd.growup/com.dczd.growup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.dczd.member/com.dczd.member.iml" filepath="$PROJECT_DIR$/com.dczd.member/com.dczd.member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.dczd.study/com.dczd.study.iml" filepath="$PROJECT_DIR$/com.dczd.study/com.dczd.study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dczd.iml" filepath="$PROJECT_DIR$/dczd.iml" />
+    </modules>
+  </component>
+</project>

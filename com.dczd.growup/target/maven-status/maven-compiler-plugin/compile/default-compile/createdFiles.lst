@@ -1,0 +1,4 @@
+com\dczd\growup\config\RedisConfigurationFactory.class
+com\dczd\growup\config\TransactionConfiguration.class
+com\dczd\growup\config\SwaggerConfig.class
+com\dczd\growup\GrowUpApplication.class

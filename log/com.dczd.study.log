@@ -1,0 +1,853 @@
+2018-12-04 16:15:36.677 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@34997338: startup date [Fri Nov 16 16:15:36 CST 2018]; root of context hierarchy
+2018-12-04 16:15:36.846 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-04 16:15:36.940 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:15:37.027 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$892fc57e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:15:37.570 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-04 16:15:37.587 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@63da207f: startup date [Fri Nov 16 16:15:37 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@34997338
+2018-12-04 16:15:38.049 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-04 16:15:38.130 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-04 16:15:38.162 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:15:38.179 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:15:38.377 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=da96cf86-ab75-315c-8201-1d6769fa7ec0
+2018-12-04 16:15:38.406 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:15:38.527 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6d15c281] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:15:38.560 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$892fc57e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:15:38.790 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-04 16:15:38.798 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-04 16:15:38.799 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-04 16:15:38.934 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-04 16:15:38.934 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1348 ms
+2018-12-04 16:15:39.138 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-04 16:15:39.139 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-04 16:15:39.139 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-04 16:15:39.139 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-04 16:15:39.140 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-04 16:15:39.141 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-04 16:15:39.188 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-04 16:15:39.190 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-04 16:15:39.205 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-04 16:15:39.210 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-04 16:16:30.070 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2cae1042: startup date [Fri Nov 16 16:16:30 CST 2018]; root of context hierarchy
+2018-12-04 16:16:30.221 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-04 16:16:30.303 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:16:30.438 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7bbf7a13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:16:31.107 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-04 16:16:31.135 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3e850122: startup date [Fri Nov 16 16:16:31 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2cae1042
+2018-12-04 16:16:31.974 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-04 16:16:32.090 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-04 16:16:32.128 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:16:32.148 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:16:32.442 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=da96cf86-ab75-315c-8201-1d6769fa7ec0
+2018-12-04 16:16:32.464 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:16:32.701 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5fa57716] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:16:32.842 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7bbf7a13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:16:33.383 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-04 16:16:33.395 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-04 16:16:33.397 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-04 16:16:33.556 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-04 16:16:33.556 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2421 ms
+2018-12-04 16:16:33.849 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-04 16:16:33.849 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-04 16:16:33.850 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-04 16:16:33.850 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-04 16:16:33.852 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-04 16:16:33.852 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-04 16:16:33.943 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-04 16:16:33.945 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-04 16:16:33.965 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-04 16:16:33.977 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-04 16:18:01.994 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@65b3a85a: startup date [Fri Nov 16 16:18:01 CST 2018]; root of context hierarchy
+2018-12-04 16:18:02.165 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-04 16:18:02.244 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:18:02.353 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9b8b2607] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:18:02.972 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-04 16:18:03.001 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@215a34b4: startup date [Fri Nov 16 16:18:03 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65b3a85a
+2018-12-04 16:18:03.472 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-04 16:18:03.566 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-04 16:18:03.602 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:18:03.619 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:18:03.816 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=f9a0c3b9-a96a-3f6c-96c9-fe70df4d0583
+2018-12-04 16:18:03.844 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:18:03.967 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f71230a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:18:04.097 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9b8b2607] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:18:04.561 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-04 16:18:04.569 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-04 16:18:04.569 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-04 16:18:04.692 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-04 16:18:04.692 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1691 ms
+2018-12-04 16:18:05.108 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-04 16:18:05.108 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-04 16:18:05.108 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-04 16:18:05.108 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-04 16:18:05.109 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-04 16:18:05.109 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-04 16:18:05.193 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-04 16:18:05.194 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-04 16:18:05.207 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-04 16:18:05.214 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-04 16:19:53.168 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2f4205be: startup date [Fri Nov 16 16:19:53 CST 2018]; root of context hierarchy
+2018-12-04 16:19:53.327 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-04 16:19:53.393 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:19:53.474 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dbb6bd4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:19:53.929 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-04 16:19:53.949 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48ea2003: startup date [Fri Nov 16 16:19:53 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2f4205be
+2018-12-04 16:19:54.563 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-04 16:19:54.648 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-04 16:19:54.676 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:19:54.693 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:19:54.886 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a1f3072f-94e6-376b-95a7-9c6ceb0d9612
+2018-12-04 16:19:54.907 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:19:55.029 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bf9cba50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:19:55.182 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dbb6bd4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:19:55.647 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-04 16:19:55.654 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-04 16:19:55.655 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-04 16:19:55.765 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-04 16:19:55.765 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1816 ms
+2018-12-04 16:19:56.209 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-04 16:19:56.210 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-04 16:19:56.210 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-04 16:19:56.210 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-04 16:19:56.211 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-04 16:19:56.211 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-04 16:19:56.282 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-04 16:19:56.284 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-04 16:19:56.297 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-04 16:19:56.303 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-04 16:22:00.886 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea6147e: startup date [Fri Nov 16 16:22:00 CST 2018]; root of context hierarchy
+2018-12-04 16:22:01.076 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-04 16:22:01.103 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:22:01.146 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e695084f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:22:01.723 [main] INFO  com.dczd.study.StudyApplication - The following profiles are active: local
+2018-12-04 16:22:01.738 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d1659ea: startup date [Fri Nov 16 16:22:01 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@ea6147e
+2018-12-04 16:22:02.460 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-04 16:22:02.549 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-04 16:22:02.591 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:22:02.606 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-04 16:22:02.840 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=eaff3f74-dff9-3aa5-892c-42e136187f62
+2018-12-04 16:22:02.859 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-04 16:22:02.963 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca7b0552] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:22:03.095 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e695084f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-04 16:22:03.588 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 6081 (http)
+2018-12-04 16:22:03.597 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-04 16:22:03.598 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-04 16:22:03.727 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-04 16:22:03.727 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1989 ms
+2018-12-04 16:22:04.227 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-04 16:22:04.228 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-04 16:22:04.228 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-04 16:22:04.228 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-04 16:22:04.229 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-04 16:22:04.229 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-04 16:22:04.719 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-12-04 16:22:04.731 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-04 16:22:04.809 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-12-04 16:22:04.810 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-04 16:22:04.811 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-12-04 16:22:04.850 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-12-04 16:22:05.589 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-04 16:22:05.723 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000229: Running schema validator
+2018-12-04 16:22:05.742 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-04 16:22:08.084 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-12-04 16:22:08.086 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-12-04 16:22:08.087 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-12-04 16:22:08.091 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-12-04 16:22:08.092 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-12-04 16:22:08.524 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-12-04 16:22:09.428 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d1659ea: startup date [Fri Nov 16 16:22:01 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@ea6147e
+2018-12-04 16:22:09.675 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-04 16:22:09.676 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-04 16:22:09.766 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-12-04 16:22:11.302 [main] INFO  org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration -
+
+Using default security password: a52a0b7d-d59a-4aea-af06-5cdcf5ce9f11
+
+2018-12-04 16:22:11.352 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2018-12-04 16:22:11.420 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration$ApplicationNoWebSecurityConfigurerAdapter$1@56034552, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32bff23d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fb8ad3d, org.springframework.security.web.header.HeaderWriterFilter@461f295c, org.springframework.security.web.csrf.CsrfFilter@2c07277f, org.springframework.security.web.authentication.logout.LogoutFilter@72a4f3f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a271c2b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2182ebc7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@627d29cc, org.springframework.security.web.session.SessionManagementFilter@3095e9c6, org.springframework.security.web.access.ExceptionTranslationFilter@64078e6a]
+2018-12-04 16:22:11.955 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-12-04 16:22:11.955 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-04 16:22:11.958 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2018-12-04 16:22:11.958 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-12-04 16:22:12.134 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-12-04 16:22:12.141 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-12-04 16:22:12.143 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-12-04 16:22:12.143 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-12-04 16:22:12.145 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-12-04 16:22:12.153 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-12-04 16:22:12.163 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=5d1659ea,type=ConfigurationPropertiesRebinder]
+2018-12-04 16:22:12.480 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2018-12-04 16:22:12.486 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2018-12-04 16:22:12.524 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2018-12-04 16:22:12.849 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2018-12-04 16:22:12.849 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2018-12-04 16:22:12.913 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2018-12-04 16:22:12.913 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2018-12-04 16:22:13.037 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 16:22:13.233 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2018-12-04 16:22:13.233 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2018-12-04 16:22:13.233 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2018-12-04 16:22:13.233 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2018-12-04 16:22:13.233 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2018-12-04 16:22:13.233 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2018-12-04 16:22:13.233 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2018-12-04 16:22:13.339 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2018-12-04 16:22:13.340 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2018-12-04 16:22:13.342 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-12-04 16:22:13.344 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1542356533344 with initial instances count: 1
+2018-12-04 16:22:13.459 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application study with eureka with status UP
+2018-12-04 16:22:13.460 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1542356533460, current=UP, previous=STARTING]
+2018-12-04 16:22:13.461 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDY/DESKTOP-IH4SO43:study:6081: registering service...
+2018-12-04 16:22:13.462 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-12-04 16:22:13.463 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-12-04 16:22:13.495 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-12-04 16:22:13.501 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_STUDY/DESKTOP-IH4SO43:study:6081 - registration status: 204
+2018-12-04 16:22:13.526 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-12-04 16:22:13.548 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-6081"]
+2018-12-04 16:22:13.559 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-6081"]
+2018-12-04 16:22:13.568 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-12-04 16:22:13.585 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 6081 (http)
+2018-12-04 16:22:13.585 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 6081
+2018-12-04 16:22:13.589 [main] INFO  com.dczd.study.StudyApplication - Started StudyApplication in 13.676 seconds (JVM running for 15.18)
+2018-12-04 16:27:13.237 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 16:32:13.240 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 16:37:13.243 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 16:42:13.246 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 16:47:13.247 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 16:52:13.250 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 16:57:13.252 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:02:13.254 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:07:13.255 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:12:13.295 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:17:13.297 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:22:13.297 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:27:13.299 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:32:13.301 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:37:13.302 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:42:13.305 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:47:13.307 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:52:13.309 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 17:57:13.311 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:02:13.313 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:07:13.314 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:12:13.317 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:17:13.317 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:22:13.319 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:27:13.321 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:32:13.322 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:37:13.325 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-12-04 18:42:13.326 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2018-11-26 10:35:10.644 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e84448c: startup date [Mon Nov 26 10:35:10 CST 2018]; root of context hierarchy
+2018-11-26 10:35:10.842 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-11-26 10:35:10.879 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-26 10:35:10.920 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$43cf7bcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-26 10:35:11.434 [main] INFO  com.dczd.study.StudyApplication - The following profiles are active: local
+2018-11-26 10:35:11.451 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@62f68dff: startup date [Mon Nov 26 10:35:11 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3e84448c
+2018-11-26 10:35:12.133 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-11-26 10:35:12.216 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-11-26 10:35:12.244 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-26 10:35:12.260 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-11-26 10:35:12.465 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=d2ab379d-3fce-3105-897b-3e1ed7ba0b65
+2018-11-26 10:35:12.481 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-11-26 10:35:12.587 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27b578d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-26 10:35:12.703 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$43cf7bcf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-26 10:35:12.984 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 6081 (http)
+2018-11-26 10:35:12.992 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-11-26 10:35:12.993 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-26 10:35:13.122 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-11-26 10:35:13.122 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1671 ms
+2018-11-26 10:35:13.384 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-26 10:35:13.385 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-26 10:35:13.385 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-26 10:35:13.385 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-26 10:35:13.385 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-11-26 10:35:13.386 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-26 10:35:13.718 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-11-26 10:35:13.728 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-11-26 10:35:13.801 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-11-26 10:35:13.803 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-11-26 10:35:13.803 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-11-26 10:35:13.844 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-26 10:35:35.091 [main] ERROR org.apache.tomcat.jdbc.pool.ConnectionPool - Unable to create initial connections of pool.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2203)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1081)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:856)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.dczd.study.StudyApplication.main(StudyApplication.java:22)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 59 common frames omitted
+2018-11-26 10:35:35.097 [main] WARN  org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2018-11-26 10:35:35.125 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-11-26 10:35:35.153 [main] INFO  org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2018-11-26 10:35:35.290 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator - HHH000229: Running schema validator
+2018-11-26 10:35:35.309 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-11-26 10:35:35.338 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'controllerAspect': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dczd.common.client.MemberClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2018-11-26 10:35:35.338 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-11-26 10:35:35.339 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-11-26 10:35:35.347 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-11-26 10:35:35.486 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.dczd.common.client.MemberClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.dczd.common.client.MemberClient' in your configuration.
+
+2018-12-07 15:16:22.255 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1dd0e7c4: startup date [Fri Dec 07 15:16:22 CST 2018]; root of context hierarchy
+2018-12-07 15:16:22.403 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-07 15:16:22.450 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-07 15:16:22.534 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$77778863] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-07 15:16:22.858 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-07 15:16:22.875 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e91893: startup date [Fri Dec 07 15:16:22 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1dd0e7c4
+2018-12-07 15:16:23.561 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-07 15:16:23.663 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-07 15:16:23.689 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-07 15:16:23.706 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-07 15:16:23.897 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a2a60fbc-134a-3587-883f-789b1c67e0cc
+2018-12-07 15:16:23.917 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-07 15:16:24.041 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b5d8566] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-07 15:16:24.166 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$77778863] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-07 15:16:24.511 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-07 15:16:24.520 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-07 15:16:24.521 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-07 15:16:24.660 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-07 15:16:24.660 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1785 ms
+2018-12-07 15:16:24.932 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-07 15:16:24.932 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-07 15:16:24.932 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-07 15:16:24.932 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-07 15:16:24.933 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-07 15:16:24.934 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-07 15:16:24.996 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-07 15:16:24.997 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-07 15:16:25.011 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-07 15:16:25.016 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-08 13:49:27.321 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@793138bd: startup date [Sat Dec 08 13:49:27 CST 2018]; root of context hierarchy
+2018-12-08 13:49:27.512 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 13:49:27.563 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 13:49:27.639 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2a3113fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 13:49:27.982 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 13:49:27.998 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d176a31: startup date [Sat Dec 08 13:49:27 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@793138bd
+2018-12-08 13:49:28.658 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-08 13:49:28.757 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-08 13:49:28.797 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 13:49:28.817 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 13:49:29.069 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a2a60fbc-134a-3587-883f-789b1c67e0cc
+2018-12-08 13:49:29.089 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 13:49:29.208 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e171101] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 13:49:29.349 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2a3113fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 13:49:29.701 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 13:49:29.709 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 13:49:29.710 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 13:49:29.846 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 13:49:29.846 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1848 ms
+2018-12-08 13:49:30.117 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 13:49:30.117 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 13:49:30.117 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 13:49:30.117 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 13:49:30.118 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 13:49:30.118 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 13:49:30.182 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-08 13:49:30.183 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 13:49:30.196 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 13:49:30.201 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-08 13:50:34.210 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2ece4966: startup date [Sat Dec 08 13:50:34 CST 2018]; root of context hierarchy
+2018-12-08 13:50:34.340 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 13:50:34.400 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 13:50:34.486 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$77778863] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 13:50:34.797 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 13:50:34.812 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@35ff8fc9: startup date [Sat Dec 08 13:50:34 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2ece4966
+2018-12-08 13:50:35.464 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-08 13:50:35.547 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-08 13:50:35.575 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 13:50:35.592 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 13:50:35.776 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a2a60fbc-134a-3587-883f-789b1c67e0cc
+2018-12-08 13:50:35.795 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 13:50:35.908 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b5d8566] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 13:50:36.033 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$77778863] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 13:50:36.347 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 13:50:36.354 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 13:50:36.355 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 13:50:36.473 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 13:50:36.473 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1661 ms
+2018-12-08 13:50:36.733 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 13:50:36.734 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 13:50:36.734 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 13:50:36.734 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 13:50:36.735 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 13:50:36.736 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 13:50:36.790 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-08 13:50:36.791 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 13:50:36.803 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 13:50:36.808 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-08 14:02:34.801 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1dd0e7c4: startup date [Sat Dec 08 14:02:34 CST 2018]; root of context hierarchy
+2018-12-08 14:02:34.936 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 14:02:34.998 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:02:35.080 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fc70b6d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:02:35.408 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 14:02:35.423 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a3be6a5: startup date [Sat Dec 08 14:02:35 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1dd0e7c4
+2018-12-08 14:02:36.076 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-08 14:02:36.159 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-08 14:02:36.185 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:02:36.199 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:02:36.396 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a2a60fbc-134a-3587-883f-789b1c67e0cc
+2018-12-08 14:02:36.414 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:02:36.523 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e056b3da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:02:36.648 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fc70b6d7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:02:36.969 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 14:02:36.976 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 14:02:36.977 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 14:02:37.107 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 14:02:37.107 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1684 ms
+2018-12-08 14:02:37.364 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 14:02:37.365 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 14:02:37.365 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 14:02:37.365 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 14:02:37.366 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 14:02:37.366 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 14:02:37.425 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-08 14:02:37.426 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 14:02:37.439 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 14:02:37.443 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-08 14:11:05.416 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5c3b6c6e: startup date [Sat Dec 08 14:11:05 CST 2018]; root of context hierarchy
+2018-12-08 14:11:05.554 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 14:11:05.615 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:11:05.695 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a6f3c8da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:11:06.006 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 14:11:06.021 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@109d724c: startup date [Sat Dec 08 14:11:06 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5c3b6c6e
+2018-12-08 14:11:06.659 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-08 14:11:06.745 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-08 14:11:06.772 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:11:06.788 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:11:06.965 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a2a60fbc-134a-3587-883f-789b1c67e0cc
+2018-12-08 14:11:06.984 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:11:07.093 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8ad9c5dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:11:07.235 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a6f3c8da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:11:07.584 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 14:11:07.591 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 14:11:07.592 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 14:11:07.698 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 14:11:07.698 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1677 ms
+2018-12-08 14:11:07.961 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 14:11:07.961 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 14:11:07.961 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 14:11:07.961 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 14:11:07.962 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 14:11:07.962 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 14:11:08.017 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-08 14:11:08.018 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 14:11:08.030 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 14:11:08.035 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-08 14:12:11.737 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3dddefd8: startup date [Sat Dec 08 14:12:11 CST 2018]; root of context hierarchy
+2018-12-08 14:12:11.867 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 14:12:11.945 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:12:12.028 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4179726f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:12:12.350 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 14:12:12.366 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2532b351: startup date [Sat Dec 08 14:12:12 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3dddefd8
+2018-12-08 14:12:13.008 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-08 14:12:13.125 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:12:13.306 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=667cdc8b-90e7-3d67-8804-101758db1a37
+2018-12-08 14:12:13.318 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:12:13.432 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$255f6f72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:12:13.561 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4179726f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:12:13.913 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 14:12:13.923 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 14:12:13.924 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 14:12:14.054 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 14:12:14.054 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1688 ms
+2018-12-08 14:12:14.313 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 14:12:14.313 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 14:12:14.313 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 14:12:14.313 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 14:12:14.314 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 14:12:14.314 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 14:12:14.341 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2018-12-08 14:12:14.343 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 14:12:14.356 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 14:12:14.456 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration required a bean of type 'javax.sql.DataSource' that could not be found.
+	- Bean method 'dataSource' not loaded because @ConditionalOnProperty (spring.datasource.jndi-name) did not find property 'jndi-name'
+	- Bean method 'dataSource' not loaded because @ConditionalOnBean (types: org.springframework.boot.jta.XADataSourceWrapper; SearchStrategy: all) did not find any beans
+
+
+Action:
+
+Consider revisiting the conditions above or defining a bean of type 'javax.sql.DataSource' in your configuration.
+
+2018-12-08 14:15:30.095 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@160ac7fb: startup date [Sat Dec 08 14:15:30 CST 2018]; root of context hierarchy
+2018-12-08 14:15:30.235 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 14:15:30.292 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:15:30.382 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fb9fd201] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:15:30.771 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 14:15:30.791 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2c306a57: startup date [Sat Dec 08 14:15:30 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@160ac7fb
+2018-12-08 14:15:31.458 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-08 14:15:31.541 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-08 14:15:31.569 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:15:31.585 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:15:31.784 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a2a60fbc-134a-3587-883f-789b1c67e0cc
+2018-12-08 14:15:31.804 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:15:31.923 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df85cf04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:15:32.047 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fb9fd201] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:15:32.362 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 14:15:32.370 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 14:15:32.371 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 14:15:32.496 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 14:15:32.496 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1705 ms
+2018-12-08 14:15:32.761 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 14:15:32.762 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 14:15:32.762 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 14:15:32.762 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 14:15:32.763 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 14:15:32.763 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 14:15:32.818 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-08 14:15:32.819 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 14:15:32.831 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 14:15:32.835 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-08 14:16:38.110 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2ece4966: startup date [Sat Dec 08 14:16:38 CST 2018]; root of context hierarchy
+2018-12-08 14:16:38.258 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 14:16:38.337 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:16:38.417 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ee64590c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:16:38.722 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 14:16:38.737 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e268ce6: startup date [Sat Dec 08 14:16:38 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2ece4966
+2018-12-08 14:16:39.405 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-08 14:16:39.514 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-08 14:16:39.547 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:16:39.563 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:16:39.754 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a2a60fbc-134a-3587-883f-789b1c67e0cc
+2018-12-08 14:16:39.773 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:16:39.891 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d24a560f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:16:40.010 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ee64590c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:16:40.324 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 14:16:40.332 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 14:16:40.332 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 14:16:40.457 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 14:16:40.458 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1720 ms
+2018-12-08 14:16:40.715 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 14:16:40.716 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 14:16:40.716 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 14:16:40.716 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 14:16:40.717 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 14:16:40.717 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 14:16:40.773 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-08 14:16:40.774 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 14:16:40.787 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 14:16:40.793 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-08 14:17:40.135 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@160ac7fb: startup date [Sat Dec 08 14:17:40 CST 2018]; root of context hierarchy
+2018-12-08 14:17:40.273 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 14:17:40.336 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:17:40.418 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f4a94dbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:17:40.735 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 14:17:40.751 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28a6301f: startup date [Sat Dec 08 14:17:40 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@160ac7fb
+2018-12-08 14:17:41.409 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study.mapper]' package. Please check your configuration.
+2018-12-08 14:17:41.489 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.dczd.study]' package. Please check your configuration.
+2018-12-08 14:17:41.515 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:17:41.530 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:17:41.706 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=a2a60fbc-134a-3587-883f-789b1c67e0cc
+2018-12-08 14:17:41.724 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:17:41.834 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d88f4ac0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:17:41.957 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f4a94dbd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:17:42.276 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 14:17:42.299 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 14:17:42.300 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 14:17:42.405 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 14:17:42.405 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1654 ms
+2018-12-08 14:17:42.690 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 14:17:42.690 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 14:17:42.690 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 14:17:42.690 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 14:17:42.691 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 14:17:42.692 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 14:17:42.762 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-08 14:17:42.763 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 14:17:42.777 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 14:17:42.782 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2018-12-08 14:29:43.804 [main] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3bf9ce3e: startup date [Sat Dec 08 14:29:43 CST 2018]; root of context hierarchy
+2018-12-08 14:29:43.920 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2018-12-08 14:29:43.956 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:29:43.994 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$520bb9ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:29:44.298 [main] INFO  com.dczd.study.StudyApplication - No active profile set, falling back to default profiles: default
+2018-12-08 14:29:44.311 [main] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3b2c0e88: startup date [Sat Dec 08 14:29:44 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3bf9ce3e
+2018-12-08 14:29:45.023 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:29:45.037 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-12-08 14:29:45.185 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=63528e95-6b2c-3179-8139-38ed9303889e
+2018-12-08 14:29:45.201 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-08 14:29:45.237 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.dczd.common.client.MemberClient' of type [org.springframework.cloud.netflix.feign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:29:45.303 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$35f1b6cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:29:45.401 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$520bb9ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-08 14:29:45.691 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-12-08 14:29:45.698 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-12-08 14:29:45.699 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-12-08 14:29:45.819 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-08 14:29:45.819 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1508 ms
+2018-12-08 14:29:46.044 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 14:29:46.045 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 14:29:46.045 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-08 14:29:46.045 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 14:29:46.046 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-12-08 14:29:46.046 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-08 14:29:46.094 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-12-08 14:29:46.095 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2018-12-08 14:29:46.105 [main] WARN  org.springframework.boot.SpringApplication - Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.config.internalTransactionAdvisor' defined in class path resource [org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor]: Factory method 'transactionAdvisor' threw exception; nested exception is java.lang.NullPointerException)
+2018-12-08 14:29:46.109 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+

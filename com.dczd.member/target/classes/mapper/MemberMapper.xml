@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dczd.member.mapper.MemberMapper">
+
+    <resultMap id="BaseResultMap" type="com.dczd.member.pojo.member.MemberPojo">
+        <result column="user_id" property="user_id" jdbcType="INTEGER"/>
+        <result column="telephone" property="telephone" jdbcType="VARCHAR"/>
+        <result column="attention" property="attention" jdbcType="TINYINT"/>
+        <result column="nickname" property="nickname" jdbcType="VARCHAR"/>
+        <result column="headimgurl" property="headimgurl" jdbcType="VARCHAR"/>
+        <result column="level_id" property="level_id" jdbcType="TINYINT"/>
+        <result column="unionid" property="unionid" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,
+        telephone,
+        attention,
+        nickname,
+        headimgurl,
+        level_id,
+        unionid
+    </sql>
+
+    <select id="findMemberByTel" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM dc_member_t t where 1=1 and t.telephone = #{tel}
+    </select>
+
+
+    <select id="findMemberByUserId" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM dc_member_t t where 1=1 and t.user_id = #{userId}
+    </select>
+
+    <update id="updateVersionAndDevice">
+        update dc_member_t set version = #{version} and device = #{device} where user_id = #{userId}
+    </update>
+
+
+
+
+</mapper>
